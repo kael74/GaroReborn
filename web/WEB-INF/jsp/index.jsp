@@ -16,19 +16,19 @@
     </head>   
 
 <body>
-	<div class="container-login">
-		<p class="text-center" style="font-size: 80px;">
+	<div class="container-login" style="z-index: 1">
+		<p class="text-center" style="font-size: 100px;">
 			<i class="zmdi zmdi-account-circle"></i>
 		</p>
-		<p class="text-center text-condensedLight">Sign in with your Account</p>
+		<p class="text-center text-condensedLight" style="color: #000000">Ingresa con tu cuenta</p>
 		<form>
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			    <input class="mdl-textfield__input" type="text" id="userName">
-			    <label class="mdl-textfield__label" for="userName">User Name</label>
+			    <label class="mdl-textfield__label" for="userName" style="color: #3F51B5">Usuario</label>
 			</div>
 			<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 			    <input class="mdl-textfield__input" type="password" id="pass">
-			    <label class="mdl-textfield__label" for="pass">Password</label>
+                            <label class="mdl-textfield__label" for="pass" style="color: #3F51B5">Contraseña</label>
 			</div>
 			<button id="SingIn" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color: #3F51B5; float:right;">
 				Sign in <i class="zmdi zmdi-mail-send"></i>
