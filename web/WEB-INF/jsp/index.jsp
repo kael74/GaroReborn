@@ -8,13 +8,8 @@
         <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Welcome to Spring Web MVC project</title>
-        <%-- <%@include file="../WEB-INF/jdf/estilo.jspf" --%>
-        <link rel="stylesheet" href="<c:url value="/Resource/css/normalize.css"/>"/>
-	<link rel="stylesheet" href="<c:url value="/Resource/css/sweetalert2.css"/>"/>
-        <link rel="stylesheet" href="<c:url value="/Resource/css/material.min.css"/>"/>
-	<link rel="stylesheet" href="<c:url value="/Resource/css/material-design-iconic-font.min.css"/>"/>
-	<link rel="stylesheet" href="<c:url value="/Resource/css/jquery.mCustomScrollbar.css"/>"/>
-	<link rel="stylesheet" href="<c:url value="/Resource/css/main.css"/>"/>
+        <%@include file="../jdf/estilo.jspf" %>
+        
     </head>
 
     <body class="cover">
