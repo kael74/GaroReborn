@@ -24,10 +24,11 @@ public class ProductoDAO implements OperacionTotal<Producto>{
         Session session = HibernateUtil.getSessionFactory().openSession();
         int x = 0;
         try {
-            session.getTransaction();
+            session.beginTransaction();
             session.merge(d);
             session.flush();
-            session.getTransaction();
+            session.getTransaction().commit();
+            x=1;
         } catch (Exception e) {
             e.printStackTrace();
             session.getTransaction().rollback();

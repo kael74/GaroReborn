@@ -6,7 +6,6 @@
 package ga.spring.hiber.dao;
 
 import ga.spring.hiber.model.Persona;
-import ga.spring.hiber.model.Producto;
 import ga.spring.hiber.model.Venta;
 import ga.spring.hiber.util.HibernateUtil;
 import java.util.ArrayList;
