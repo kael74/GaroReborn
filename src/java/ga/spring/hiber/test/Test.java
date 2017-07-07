@@ -12,7 +12,6 @@ import ga.spring.hiber.dao.ProductoDAO;
 import ga.spring.hiber.dao.UsuarioDAO;
 import ga.spring.hiber.dao.VentaDAO;
 import ga.spring.hiber.model.Producto;
-import ga.spring.hiber.model.Rol;
 import java.util.List;
 import javax.persistence.EntityManager;
 
@@ -32,10 +31,10 @@ public class Test {
      
     public static void main(String[] args) {
          /*TODO code application logic here*/
-        crear();
+        //crear();
         //eliminar();
         //editar();
-        //listar();
+        listar();
         
     }
     public static void conex(EntityManager f){
@@ -45,8 +44,8 @@ public class Test {
     public static void crear(){
         Producto pro = new Producto();
         
-        pro.setNombre("Laptop");        
-        pro.setMarca("Asus");
+        pro.setNombre("tablet");        
+        pro.setMarca("Fone");
         pro.setPrecio(200);
         if(prod.create(pro)==1){
             System.out.println("si");

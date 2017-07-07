@@ -82,7 +82,7 @@ public class ProductoDAO implements OperacionTotal<Producto>{
         Session session = HibernateUtil.getSessionFactory().openSession();
         try {
             session.beginTransaction();
-            listaproduc = session.createCriteria(Persona.class).list();
+            listaproduc = session.createCriteria(Producto.class).list();
             int count = listaproduc.size();
             session.getTransaction();
         } catch (Exception e) {
