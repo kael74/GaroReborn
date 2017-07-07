@@ -72,6 +72,9 @@ html, body{
 	background-position: center center;
 	background-color: #fff;
 	background-image: url(../assets/img/fontLogin.jpg);
+	background-image: url(../assets/img/fontLogin.jpg);
+        
+        
 }
 .mdl-list__item-avatar{
 	line-height: 40px;
