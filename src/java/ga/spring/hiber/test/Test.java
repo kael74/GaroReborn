@@ -13,6 +13,7 @@ import ga.spring.hiber.dao.UsuarioDAO;
 import ga.spring.hiber.dao.VentaDAO;
 import ga.spring.hiber.model.Producto;
 import ga.spring.hiber.model.Rol;
+import ga.spring.hiber.model.Usuario;
 import java.util.List;
 import javax.persistence.EntityManager;
 
@@ -33,10 +34,10 @@ public class Test {
     public static void main(String[] args) {
         /*TODO code application logic here*/
         //crear();
-        crearrol();
+        //crearrol();
         //eliminar();
         //editar();
-        //listar();
+        listarU();
         
     }
 
@@ -96,6 +97,12 @@ public class Test {
         List<Producto> lista = prod.readAll();
         for (Producto produ : lista) {
             System.out.println(produ.getNombre() + "\t" + produ.getPrecio() + "\t" + produ.getMarca());
+        }
+    }
+    public static void listarU() {
+        List<Usuario> lista = use.readAll();
+        for (Usuario Usa : lista) {
+            System.out.println(Usa.getUser());
         }
     }
     

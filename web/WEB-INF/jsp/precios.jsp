@@ -3,12 +3,13 @@
     Created on : 06/07/2017, 08:10:15 PM
     Author     : Computer
 --%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <%@include file="../jdf/estilo.jspf" %>
         <title>JSP Page</title>
     </head>
     <body>
@@ -150,7 +151,7 @@
                             </a>
                             <ul class="full-width menu-principal sub-menu-options">
                                 <li class="full-width">
-                                    <a href="company.html" class="full-width">
+                                    <a href="users" class="full-width">
                                         <div class="navLateral-body-cl">
                                             <i class="zmdi zmdi-balance"></i>
                                         </div>
@@ -160,7 +161,7 @@
                                     </a>
                                 </li>
                                 <li class="full-width">
-                                    <a href="providers.html" class="full-width">
+                                    <a href="admins" class="full-width">
                                         <div class="navLateral-body-cl">
                                             <i class="zmdi zmdi-truck"></i>
                                         </div>
@@ -172,7 +173,7 @@
                             </ul>
                         </li>
                         <li class="full-width">
-                            <a href="products.html" class="full-width">
+                            <a href="precios" class="full-width">
                                 <div class="navLateral-body-cl">
                                     <i class="zmdi zmdi-washing-machine"></i>
                                 </div>
@@ -185,7 +186,7 @@
                         <li class="full-width">
                         <li class="full-width divider-menu-h"></li>
                         <li class="full-width">
-                            <a href="products.html" class="full-width">
+                            <a href="registrar_p" class="full-width">
                                 <div class="navLateral-body-cl">
                                     <i class="zmdi zmdi-washing-machine"></i>
                                 </div>
@@ -195,7 +196,7 @@
                             </a>
                         </li>
                         <li class="full-width divider-menu-h"></li>
-                        
+
                         <li class="full-width">
                             <a href="#!" class="full-width btn-subMenu">
                                 <div class="navLateral-body-cl">
@@ -231,6 +232,48 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </section>
+        <section class="full-width pageContent">
+            <section class="full-width header-well">
+                <div class="full-width header-well-icon">
+                    <i class="zmdi zmdi-store"></i>
+                </div>
+                <div class="full-width header-well-text">
+                    <p class="text-condensedLight">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut nulla accusantium minus corporis accusamus fuga harum natus molestias necessitatibus.
+                    </p>
+                </div>
+            </section>
+            <!--listar -->
+            <div class="full-width divider-menu-h"></div>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width table-responsive">
+                        <thead>
+                            <tr>
+                                <th>ID</th>                             
+                                <th data-bind="miau">Productos</th>
+                                <th>Marcas</th>
+                                <th>Precios</th>
+                                <th colspan="2">Gestionar</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach var="pro" begin="0" items="${lista}">
+                            <tr>
+                            <th><c:out value="${pro.idproducto}"></c:out></th>
+                            <th><c:out value="${pro.nombre}"></c:out></th>
+                            <th><c:out value="${pro.marca}"></c:out></th>
+                            <th><c:out value="${pro.precio}"></c:out></th>
+                            <th><a href="u?id=<c:out value="${pro.idproducto}"></c:out>">Modificar</a></th>
+                            <th><a href="de?id=<c:out value="${pro.idproducto}"></c:out>">Eliminar</a></th>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </body>

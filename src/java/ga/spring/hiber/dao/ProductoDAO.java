@@ -99,4 +99,19 @@ public class ProductoDAO implements OperacionTotal<Producto>{
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
+    public Producto read(int id){
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Producto p = new Producto();
+        try {
+            session.beginTransaction();
+            p = (Producto) session.get(Producto.class, id);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.getTransaction().rollback();
+        } finally {
+            session.close();
+        }
+        return p;
+    }
 }

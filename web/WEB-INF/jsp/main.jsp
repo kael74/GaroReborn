@@ -151,7 +151,7 @@
                             </a>
                             <ul class="full-width menu-principal sub-menu-options">
                                 <li class="full-width">
-                                    <a href="company.html" class="full-width">
+                                    <a href="users" class="full-width">
                                         <div class="navLateral-body-cl">
                                             <i class="zmdi zmdi-balance"></i>
                                         </div>
@@ -161,7 +161,7 @@
                                     </a>
                                 </li>
                                 <li class="full-width">
-                                    <a href="providers.html" class="full-width">
+                                    <a href="admins" class="full-width">
                                         <div class="navLateral-body-cl">
                                             <i class="zmdi zmdi-truck"></i>
                                         </div>
@@ -173,7 +173,7 @@
                             </ul>
                         </li>
                         <li class="full-width">
-                            <a href="products.html" class="full-width">
+                            <a href="precios" class="full-width">
                                 <div class="navLateral-body-cl">
                                     <i class="zmdi zmdi-washing-machine"></i>
                                 </div>
@@ -186,7 +186,7 @@
                         <li class="full-width">
                         <li class="full-width divider-menu-h"></li>
                         <li class="full-width">
-                            <a href="products.html" class="full-width">
+                            <a href="registrar_p" class="full-width">
                                 <div class="navLateral-body-cl">
                                     <i class="zmdi zmdi-washing-machine"></i>
                                 </div>
