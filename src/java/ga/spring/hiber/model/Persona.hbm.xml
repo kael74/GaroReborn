@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/07/2017 07:53:15 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="ga.spring.hiber.model.Persona" table="persona" schema="public" optimistic-lock="version">
+        <id name="idpersona" type="int">
+            <column name="idpersona" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="45" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="45" not-null="true" />
+        </property>
+        <property name="fechaN" type="date">
+            <column name="fecha_n" length="13" not-null="true" />
+        </property>
+        <property name="genero" type="boolean">
+            <column name="genero" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="45" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="45" not-null="true" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais" length="20" />
+        </property>
+        <one-to-one name="usuario" class="ga.spring.hiber.model.Usuario"></one-to-one>
+    </class>
+</hibernate-mapping>
