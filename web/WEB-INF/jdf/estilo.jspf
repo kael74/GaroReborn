@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="<c:url value="/Resource/css/material-design-iconic-font.min.css"/>"/>
 	<link rel="stylesheet" href="<c:url value="/Resource/css/jquery.mCustomScrollbar.css"/>"/>
 	<link rel="stylesheet" href="<c:url value="/Resource/css/main.css"/>"/>
+        <link rel="stylesheet" href="<c:url value="/Resource/css/style.css"/>"/>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<c:url value="/Resource/js/jquery-1.11.2.min.js"/>"/><\/script>')</script>
 	<script src="<c:url value="/Resource/js/material.min.js"/>"></script>
