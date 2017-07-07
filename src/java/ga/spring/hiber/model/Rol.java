@@ -10,18 +10,18 @@ public class Rol  implements java.io.Serializable {
 
 
      private int idrol;
-     private char rol;
+     private String rol;
      private Usuario usuario;
 
     public Rol() {
     }
 
 	
-    public Rol(int idrol, char rol) {
+    public Rol(int idrol, String rol) {
         this.idrol = idrol;
         this.rol = rol;
     }
-    public Rol(int idrol, char rol, Usuario usuario) {
+    public Rol(int idrol, String rol, Usuario usuario) {
        this.idrol = idrol;
        this.rol = rol;
        this.usuario = usuario;
@@ -34,11 +34,11 @@ public class Rol  implements java.io.Serializable {
     public void setIdrol(int idrol) {
         this.idrol = idrol;
     }
-    public char getRol() {
+    public String getRol() {
         return this.rol;
     }
     
-    public void setRol(char rol) {
+    public void setRol(String rol) {
         this.rol = rol;
     }
     public Usuario getUsuario() {

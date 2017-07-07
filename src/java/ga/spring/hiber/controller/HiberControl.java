@@ -45,11 +45,11 @@ public class HiberControl {
     public String principal(HttpServletRequest request, HttpServletResponse response) {
         String url = "index";
         String user = request.getParameter("user");
-        String clave = request.getParameter("clave");
+        String clave = request.getParameter("pass");
         try {
             if (use.validar(user, clave) == 1) {
                 request.setAttribute("user", user);
-                url = "principal";
+                url = "main";
             }
         } catch (Exception e) {
             System.out.println("Error:" + e);
