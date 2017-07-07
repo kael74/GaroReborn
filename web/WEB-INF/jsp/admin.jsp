@@ -1,6 +1,6 @@
 <%-- 
-    Document   : main
-    Created on : 06/07/2017, 08:09:58 PM
+    Document   : admin
+    Created on : 07/07/2017, 01:44:58 AM
     Author     : Computer
 --%>
 
@@ -9,7 +9,6 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <%@include file="../jdf/estilo.jspf" %>
         <title>JSP Page</title>
     </head>
     <body>
@@ -234,7 +233,5 @@
                 </nav>
             </div>
         </section>
-        <!-- pageContent -->
-        
     </body>
 </html>

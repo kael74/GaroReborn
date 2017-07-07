@@ -28,7 +28,7 @@ public class HiberControl {
     @RequestMapping("/registrar")
     public String registrar(Model model){
     //model.addAttribute("user", "jose Rayo");
-        return "registrar";
+        return "registrar_p";
     }
     @RequestMapping("/listar")
     public String listar(Model model){

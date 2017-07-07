@@ -31,7 +31,7 @@
                             <label class="mdl-textfield__label" for="pass" style="color: #3F51B5">Contraseña</label>
 			</div>
 			<button id="SingIn" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color: #3F51B5; float:right;">
-				Sign in <i class="zmdi zmdi-mail-send"></i>
+				Ingresar <i class="zmdi zmdi-mail-send"></i>
 			</button>
 		</form>
 	</div>
