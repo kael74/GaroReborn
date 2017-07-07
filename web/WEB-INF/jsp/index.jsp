@@ -13,16 +13,9 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.5/pixi.min.js'></script>
         <script src="<c:url value="/Resource/js/index.js"/>"></script>
         
-    </head>
-
-    
+    </head>   
 
 <body>
-  
- <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.5/pixi.min.js'></script>
-
-    <script src="js/index.js"></script>-->
 	<div class="container-login">
 		<p class="text-center" style="font-size: 80px;">
 			<i class="zmdi zmdi-account-circle"></i>
