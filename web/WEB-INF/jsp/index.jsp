@@ -33,6 +33,9 @@
 			<button id="SingIn" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color: #3F51B5; float:right;">
 				Ingresar <i class="zmdi zmdi-mail-send"></i>
 			</button>
+                    <button id="crear" class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color: #3F51B5; float:right;">
+				Crear Usuario <i class="zmdi zmdi-mail-send"></i>
+			</button>
 		</form>
 	</div>
   

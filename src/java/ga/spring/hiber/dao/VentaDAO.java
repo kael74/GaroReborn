@@ -10,6 +10,7 @@ import ga.spring.hiber.model.Venta;
 import ga.spring.hiber.util.HibernateUtil;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.IdentifierLoadAccess;
 import org.hibernate.Session;
 
 /**
@@ -17,7 +18,7 @@ import org.hibernate.Session;
  * @author rodrigo gutierrez
  */
 public class VentaDAO implements OperacionTotal<Venta>{
-
+    
     @Override
     public int create(Venta d) {
     

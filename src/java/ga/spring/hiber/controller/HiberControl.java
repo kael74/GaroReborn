@@ -5,6 +5,9 @@
  */
 package ga.spring.hiber.controller;
 
+import ga.spring.hiber.dao.UsuarioDAO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class HiberControl {
+    
+   private static UsuarioDAO use = new UsuarioDAO();
     @RequestMapping("/index")
     public String index(Model model){
     //model.addAttribute("user", "jose Rayo");
@@ -34,5 +39,22 @@ public class HiberControl {
     public String listar(Model model){
     //model.addAttribute("user", "jose Rayo");
         return "listar";
+    }
+    
+    @RequestMapping("/v")
+    public String principal(HttpServletRequest request, HttpServletResponse response) {
+        String url = "index";
+        String user = request.getParameter("user");
+        String clave = request.getParameter("clave");
+        try {
+            if (use.validar(user, clave) == 1) {
+                request.setAttribute("user", user);
+                url = "principal";
+            }
+        } catch (Exception e) {
+            System.out.println("Error:" + e);
+        }
+
+        return url;
     }
 }

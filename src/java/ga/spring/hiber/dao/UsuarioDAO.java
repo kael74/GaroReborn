@@ -17,7 +17,23 @@ import org.hibernate.Session;
  * @author rodrigo gutierrez
  */
 public class UsuarioDAO implements OperacionTotal<Usuario> {
-
+    public int validar(String user, String clave){
+        Session session=HibernateUtil.getSessionFactory().openSession();
+        int op=0;
+        try {
+            session.getTransaction();
+            session.byId(user);
+            session.byId(clave);
+            session.getTransaction().commit();
+            op = 1;
+            }catch (Exception e) {
+            e.printStackTrace();
+            session.getTransaction().rollback();
+            }finally{
+            session.close();
+        }return op;
+        }
+        
     @Override
     public int create(Usuario d) {
         Session session = HibernateUtil.getSessionFactory().openSession();
